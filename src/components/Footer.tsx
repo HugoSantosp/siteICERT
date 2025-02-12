@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
-                <span>contato@igrejaviva.com</span>
+                <span>icer.tomazinho@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5" />
@@ -51,14 +51,6 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Instagram className="h-5 w-5" />
                 <span>Icert.ag</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-5 w-5" />
-                <span>contato@igrejaviva.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5" />
-                <span>Av. Presidente Tancredo Neves, 1831 - Tomazinho, São João de Meriti - RJ</span>
               </div>
             </div>
           </div>
