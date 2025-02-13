@@ -62,24 +62,24 @@ const HomePage = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Nossos Propósitos</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-blue-600" />
+              <div className="bg-orange-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Amor ao Próximo</h3>
               <p className="text-gray-600">Demonstramos o amor de Cristo através de ações práticas do evangelho.</p>
             </div>
             
             <div className="text-center p-6">
-              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-blue-600" />
+              <div className="bg-orange-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Missão</h3>
               <p className="text-gray-600">Alcançar pessoas com a mensagem transformadora do evangelho.</p>
             </div>
             
             <div className="text-center p-6">
-              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-blue-600" />
+              <div className="bg-orange-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Comunhão</h3>
               <p className="text-gray-600">Cultivamos relacionamentos genuínos e apoio mútuo entre os membros.</p>

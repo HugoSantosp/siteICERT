@@ -1,6 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Church, Users, Home, Calendar } from 'lucide-react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import MinistriesPage from './pages/MinistriesPage';
 import CellGroupsPage from './pages/CellGroupsPage';

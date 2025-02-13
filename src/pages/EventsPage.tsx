@@ -12,56 +12,7 @@ const events = [
     shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
     fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
   },
-  {
-    id: 2,
-    title: 'Retiro de Famílias',
-    date: '10-12 Maio, 2024',
-    time: 'Todo o dia',
-    location: 'Acampamento Vida Nova',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Um tempo especial de renovação para toda a família.',
-    fullDescription: 'Um final de semana dedicado ao fortalecimento dos laços familiares através de atividades especiais, estudos bíblicos, momentos de lazer e comunhão.',
-  },
-  {
-    id: 3,
-    title: 'Culto de Páscoa',
-    date: '31 Março, 2024',
-    time: '10:00',
-    location: 'Templo Principal',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Celebração especial da ressurreição de Cristo.',
-    fullDescription: 'Uma celebração especial com apresentações do coral, dramatização e uma mensagem poderosa sobre o significado da Páscoa.',
-  },
-  {
-    id: 4,
-    title: 'Culto de Páscoa',
-    date: '31 Março, 2024',
-    time: '10:00',
-    location: 'Templo Principal',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Celebração especial da ressurreição de Cristo.',
-    fullDescription: 'Uma celebração especial com apresentações do coral, dramatização e uma mensagem poderosa sobre o significado da Páscoa.',
-  },
-  {
-    id: 5,
-    title: 'Culto de Páscoa',
-    date: '31 Março, 2024',
-    time: '10:00',
-    location: 'Templo Principal',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Celebração especial da ressurreição de Cristo.',
-    fullDescription: 'Uma celebração especial com apresentações do coral, dramatização e uma mensagem poderosa sobre o significado da Páscoa.',
-  },
-  {
-    id: 6,
-    title: 'Culto de Páscoa',
-    date: '31 Março, 2024',
-    time: '10:00',
-    location: 'Templo Principal',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Celebração especial da ressurreição de Cristo.',
-    fullDescription: 'Uma celebração especial com apresentações do coral, dramatização e uma mensagem poderosa sobre o significado da Páscoa.',
-  }
+ 
 ];
 
 const EventsPage = () => {
@@ -71,7 +22,7 @@ const EventsPage = () => {
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Eventos</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">ICERT News</h1>
           <p className="text-lg text-gray-600">Confira nossa programação de eventos e participe conosco</p>
         </div>
 

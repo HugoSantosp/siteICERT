@@ -13,6 +13,7 @@ const Footer = () => {
             <p className="text-gray-300">
               Um Lugar Perfeito Para Pessoas Imperfeitas.
             </p>
+            
           </div>
           
           <div>
@@ -23,8 +24,16 @@ const Footer = () => {
                 <span>(00) 0000-0000</span>
               </div>
               <div className="flex items-center space-x-2">
+                <Facebook className="h-5 w-5" />
+                <span>Icert.ag</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Instagram className="h-5 w-5" />
+                <span>Icert.ag</span>
+              </div>
+              <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
-                <span>contato@igrejaviva.com</span>
+                <span>icer.tomazinho@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5" />
@@ -40,29 +49,6 @@ const Footer = () => {
               <p>Quarta-feira: 19h30</p>
             </div>
           </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-4">Nossas Redes</h3>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <Facebook className="h-5 w-5" />
-                <span>Icert.ag</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Instagram className="h-5 w-5" />
-                <span>Icert.ag</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-5 w-5" />
-                <span>contato@igrejaviva.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5" />
-                <span>Av. Presidente Tancredo Neves, 1831 - Tomazinho, São João de Meriti - RJ</span>
-              </div>
-            </div>
-          </div>
-
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
