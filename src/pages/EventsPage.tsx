@@ -8,7 +8,7 @@ const events = [
     date: '15-17 Abril, 2024',
     time: '19:00',
     location: 'Auditório Principal',
-    image: 'https://images.unsplash.com/photo-1526346698789-22fd84314424?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
     fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
   },
