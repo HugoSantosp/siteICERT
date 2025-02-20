@@ -1,12 +1,12 @@
-import React from 'react';
-import { Music, Book, Users, Video, Shield as Child, Cpu, Star } from 'lucide-react';
+import { Music, Book, Users, Video, Shield as Child, Cpu, Star, Import } from 'lucide-react';
+import ImageAdoracao from '../image/Adoracao.jpg'
 
 const ministries = [
   {
     icon: <Music className="h-8 w-8" />,
     name: 'Ministério de Louvor',
     description: 'Conduzindo a igreja em adoração através da música e expressão artística.',
-    image: 'https://images.unsplash.com/photo-1461784121038-f088ca1e7714?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageAdoracao
   },
   {
     icon: <Star className="h-8 w-8" />,
