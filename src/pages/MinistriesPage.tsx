@@ -1,5 +1,7 @@
-import { Music, Book, Users, Video, Shield as Child, Cpu, Star, Import } from 'lucide-react';
+import { Music, Book, Users, Shield as Child, Cpu, Star } from 'lucide-react';
 import ImageAdoracao from '../image/Adoracao.jpg'
+import ImageDanca from '../image/danca.jpeg'
+import ImageIntercessao from '../image/intercessao.jpeg'
 
 const ministries = [
   {
@@ -12,12 +14,12 @@ const ministries = [
     icon: <Star className="h-8 w-8" />,
     name: 'Ministério de Dança',
     description: 'Formação bíblica e discipulado para todas as idades.',
-    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageDanca
   },
   {
     icon: <Cpu className="h-8 w-8" />,
     name: 'Ministério de Mídia e Tecnologia',
-    description: 'Alcançando a comunidade através de projetos sociais e assistência.',
+    description: 'Produção audiovisual e presença digital da igreja.',
     image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -27,10 +29,10 @@ const ministries = [
     image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
   },
   {
-    icon: <Video className="h-8 w-8" />,
-    name: 'Ministério de Mídia',
-    description: 'Produção audiovisual e presença digital da igreja.',
-    image: 'https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    icon: <Book className="h-8 w-8" />,
+    name: 'Ministério de Intercessão',
+    description: 'Fortalecendo a igreja em Orações e suplicas.',
+    image: ImageIntercessao
   },
   {
     icon: <Child className="h-8 w-8" />,
