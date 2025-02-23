@@ -1,16 +1,77 @@
 import { useState } from 'react';
 import { Calendar, Clock, MapPin, ChevronRight } from 'lucide-react';
+import ImageRetiroCasais from '../image/retiro-casais.png'
 
 const events = [
   {
     id: 1,
-    title: 'Conferência de Jovens 2024',
-    date: '15-17 Abril, 2024',
-    time: '19:00',
+    title: 'Festa da Páscoa',
+    date: '19/04/2025 e 20/04/2025',
+    time: '--',
+    location: 'Agência',
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
+    fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
+  },
+  {
+    id: 2,
+    title: 'Série de conferências: Lições com Elas.',
+    date: 'Todas as quartas',
+    time: '19:30',
     location: 'Auditório Principal',
     image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
     fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
+  },
+  {
+    id: 3,
+    title: 'Discipulado Plantados, Ceia do Senhor e Batismo nas águas',
+    date: ' 02/03/2025 (Domingo)',
+    time: '09:00',
+    location: 'Auditório Principal',
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
+    fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
+  },
+  {
+    id: 4,
+    title: 'Matrículas abertas Escola Apostólica 2025',
+    date: ' Início das aulas em março.',
+    time: '--',
+    location: '--',
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    shortDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
+    fullDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
+  },
+  {
+    id: 5,
+    title: 'Congresso de Mulheres',
+    date: '29/03/2025',
+    time: '--',
+    location: '--',
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    shortDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
+    fullDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
+  },
+  {
+    id: 6,
+    title: 'Retiro de casais',
+    date: '05/12 a 07/12',
+    time: '--',
+    location: 'City Park Hotel - Penedo',
+    image: ImageRetiroCasais,
+    shortDescription: 'Faça sua incrição com Jeferson e Lene ou André e Aline',
+    fullDescription: 'Dias memoraveis de alianças e conexões, movimentos inesquecíveis e renovação. Não perca tempo e invista no seu casamento '
+  },
+  {
+    id: 7,
+    title: 'Congresso anual ICERT',
+    date: '21/04/2025',
+    time: '--',
+    location: 'Agência',
+    image: ImageRetiroCasais,
+    shortDescription: 'Participe conosco e haverá uma Marcha pela manhã denominada "Meriti haja paz em ti." ',
+    fullDescription: 'Participe conosco e haverá uma Marcha pela manhã denominada "Meriti haja paz em ti."'
   },
  
 ];
@@ -23,7 +84,7 @@ const EventsPage = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">ICERT News</h1>
-          <p className="text-lg text-gray-600">Confira nossa programação de eventos e participe conosco</p>
+          <p className="text-lg text-gray-600">Confira nossa programação de eventos do mês de Março de 2025 e participe conosco</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
