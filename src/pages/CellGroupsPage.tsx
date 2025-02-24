@@ -1,5 +1,5 @@
 import { Calendar, Clock, MapPin, ChevronRight,Users } from 'lucide-react';
-import ImageAliancados from '../image/celulas/Aliancados-em-Cristo.png'
+import ImageAliancados from '../image/celulas/AliancadosEmCristo.png'
 import ImageFilhasdoRei from '../image/celulas/FilhasdoRei.png'
 import Image300deGideao from '../image/celulas/300deGideao.png'
 import ImageCristoRocha from '../image/celulas/CristoRochaEterna.png'
@@ -7,6 +7,7 @@ import ImageTirosh from '../image/celulas/Tirosh.png'
 import ImageVivus from '../image/celulas/vivus2.jpg'
 import ImageHerdeiras from '../image/celulas/Herdeiras.png'
 import ImageAliancadas from '../image/celulas/MulheresAliancadas.png'
+import ImageAmordeDeus from '../image/celulas/AmordeDeus.png'
 
 const cellgroups = [
   {
@@ -47,7 +48,7 @@ const cellgroups = [
     time: '19:30',
     location: 'Antônio Martins de Oliveira, 783 - Tomazinho',
     image: ImageCristoRocha,
-    fullDescription: 'Junte-se a célula de Homem valorozos que aprendem todos os dias como Servir e Proteger Suas Famílias segundo a chamada de Deus.',
+    fullDescription: 'Junte-se a célula de Mulheres onde apredemos aprendemos a ser mãe, mulher e esposa segundo A Bíblia Sagrada',
   },
   {
     id: 5,
@@ -96,7 +97,7 @@ const cellgroups = [
     date: 'Alternados',
     time: '19:30',
     location: 'Peri 138 casa 9 - Tomazinho',
-    image: ImageAliancadas,
+    image: ImageAmordeDeus,
     fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
   },
 ];

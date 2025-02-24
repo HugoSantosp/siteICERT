@@ -78,7 +78,6 @@ const events = [
 
 const EventsPage = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
-
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
@@ -114,14 +113,30 @@ const EventsPage = () => {
                 </div>
 
                 <p className="text-gray-600 mb-4">{event.shortDescription}</p>
+                
 
-                <button
-                  onClick={() => setSelectedEvent(event)}
-                  className="flex items-center text-blue-600 font-semibold hover:text-blue-800"
-                >
-                  Saiba mais
-                  <ChevronRight className="h-5 w-5 ml-1" />
-                </button>
+                <div className="flex items-center gap-4 mt-4">
+                    {/* Botão de inscrição (exibido apenas para um evento específico) */}
+                    {event.title === "Congresso de Mulheres" && (
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfJc7syy8M4uM7msWeiIIY0bNIoZhjp4Wrz5EH3UqnmEm9SqA/viewform?usp=header"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                      >
+                        Inscreva-se
+                      </a>
+                    )}
+
+                    {/* Botão de Saiba Mais */}
+                    <button
+                      onClick={() => setSelectedEvent(event)}
+                      className="flex items-center text-blue-600 font-semibold hover:text-blue-800"
+                    >
+                      Saiba mais
+                      <ChevronRight className="h-5 w-5 ml-1" />
+                    </button>
+                </div>
               </div>
             </div>
           ))}
