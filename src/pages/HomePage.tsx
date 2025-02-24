@@ -7,6 +7,72 @@ import ImageCrianca from '../image/crianca.png';
 import ImageSantaCeia from '../image/santaceia.png';
 import { Calendar, Clock, MapPin, } from 'lucide-react';
 
+import ImageAnaLucia from '../image/pastores/Analucia.png';
+import ImageJorge from '../image/pastores/Jorge.png';
+import ImageBia from '../image/pastores/Bia.jpg';
+import ImageIgor from '../image/pastores/Igor.jpg';
+import ImageDaniel from '../image/pastores/Daniel.jpg';
+import ImageIris from '../image/pastores/Iris.jpg';
+import ImageKatia from '../image/pastores/Katia.png';
+import ImageSimone from '../image/pastores/Simone.png';
+import ImageCarol from '../image/pastores/Carol.png';
+
+const pastores =[
+  {
+    image: ImageJorge,
+    nome: 'Pr Jorge Magalhães',
+    posicao: 'Pastor Presidente',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageIris,
+    nome: 'Pra Iris Magalhães',
+    posicao: 'Pastor Presidente',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageIgor,
+    nome: 'Pra Igor Magalhães',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageBia,
+    nome: 'Pra Bia Magalhães',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageDaniel,
+    nome: 'Pr Daniel Gonçalves',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageKatia,
+    nome: 'Pra Kátia Gonçalves',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageAnaLucia,
+    nome: 'Pra Ana Lucia',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageSimone,
+    nome: 'Pra Simone de Souza',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  },
+  {
+    image: ImageCarol,
+    nome: 'Pra Carol Magalhães',
+    posicao: 'Pastor Auxiliar',
+    timeservice: 'Servindo há 15 anos'
+  }
+]
 
 
 const events = [
@@ -84,6 +150,30 @@ const HomePage = () => {
               <h3 className="text-xl font-semibold mb-2">Comunhão</h3>
               <p className="text-gray-600">Cultivamos relacionamentos genuínos e apoio mútuo entre os membros.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pastoral Team Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Nosso Corpo Pastoral</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {pastores.map((key) => (
+              <div className="text-center">
+                <div className="mb-4 relative">
+                  <img
+                    src={key.image}
+                    alt="Pastor Presidente"
+                    className="w-48 h-48 rounded-full object-cover mx-auto"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{key.nome}</h3>
+                <p className="text-gray-600 mb-2">{key.posicao}</p>
+              {/* <p className="text-gray-500 text-sm">{key.timeservice}</p> */}
+              </div>
+            ))}
+
           </div>
         </div>
       </section>

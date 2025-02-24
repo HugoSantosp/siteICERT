@@ -4,8 +4,9 @@ import ImageFilhasdoRei from '../image/celulas/FilhasdoRei.png'
 import Image300deGideao from '../image/celulas/300deGideao.png'
 import ImageCristoRocha from '../image/celulas/CristoRochaEterna.png'
 import ImageTirosh from '../image/celulas/Tirosh.png'
-import ImageVivus from '../image/celulas/Vivus.png'
+import ImageVivus from '../image/celulas/vivus2.jpg'
 import ImageHerdeiras from '../image/celulas/Herdeiras.png'
+import ImageAliancadas from '../image/celulas/MulheresAliancadas.png'
 
 const cellgroups = [
   {
@@ -76,6 +77,26 @@ const cellgroups = [
     time: '19:30',
     location: 'Dona Jove, 340 - Tomazinho',
     image: ImageHerdeiras,
+    fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
+  },
+  {
+    id: 8,
+    leader: 'Barbara Darc',
+    title: 'Mulheres Aliançadas',
+    date: 'Alternados',
+    time: '19:30',
+    location: 'Professor Alfredo Maurício Brum lote 3 quadra 2 - Tomazinho',
+    image: ImageAliancadas,
+    fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
+  },
+  {
+    id: 9,
+    leader: 'Antônio Carlos',
+    title: 'Amor de Deus',
+    date: 'Alternados',
+    time: '19:30',
+    location: 'Peri 138 casa 9 - Tomazinho',
+    image: ImageAliancadas,
     fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
   },
 ];

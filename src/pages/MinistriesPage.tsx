@@ -2,6 +2,8 @@ import { Music, Book, Users, Shield as Child, Cpu, Star } from 'lucide-react';
 import ImageAdoracao from '../image/Adoracao.jpg'
 import ImageDanca from '../image/danca.jpeg'
 import ImageIntercessao from '../image/intercessao.jpeg'
+import ImageFamilia from '../image/Familia.png'
+import ImageInfantil from '../image/Infantil.jpg'
 
 const ministries = [
   {
@@ -26,7 +28,7 @@ const ministries = [
     icon: <Users className="h-8 w-8" />,
     name: 'Ministério de Família',
     description: 'Fortalecendo famílias através de aconselhamento e eventos.',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageFamilia
   },
   {
     icon: <Book className="h-8 w-8" />,
@@ -38,7 +40,7 @@ const ministries = [
     icon: <Child className="h-8 w-8" />,
     name: 'Ministério Infantil',
     description: 'Cuidando e ensinando as crianças sobre o amor de Deus.',
-    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageInfantil
   }
 ];
 

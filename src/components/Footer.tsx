@@ -1,4 +1,4 @@
-import { Church, Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Church, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -19,10 +19,6 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Contato</h3>
             <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <Phone className="h-5 w-5" />
-                <span>(00) 0000-0000</span>
-              </div>
               <div className="flex items-center space-x-2">
                 <Facebook className="h-5 w-5" />
                 <span>Icert.ag</span>
