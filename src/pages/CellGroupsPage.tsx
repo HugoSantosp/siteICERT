@@ -1,92 +1,132 @@
-import { Users, MapPin, Clock } from 'lucide-react';
+import { Calendar, Clock, MapPin, ChevronRight,Users } from 'lucide-react';
+import ImageAliancados from '../image/celulas/Aliancados-em-Cristo.png'
+import ImageFilhasdoRei from '../image/celulas/FilhasdoRei.png'
+import Image300deGideao from '../image/celulas/300deGideao.png'
+import ImageCristoRocha from '../image/celulas/CristoRochaEterna.png'
+import ImageTirosh from '../image/celulas/Tirosh.png'
+import ImageVivus from '../image/celulas/Vivus.png'
+import ImageHerdeiras from '../image/celulas/Herdeiras.png'
 
-const cellGroups = [
+const cellgroups = [
   {
-    name: 'Vida Nova',
-    leader: 'João e Maria Silva',
-    location: 'Região Central',
-    time: 'Terças, 20h',
-    description: 'Grupo focado em casais jovens e profissionais.',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    id: 1,
+    leader: 'Jefferson e Lene',
+    title: 'Aliançados em Cristo',
+    date: 'Terça',
+    time: '20:00',
+    location: 'Rua Aurélio Cordeiro, 1407 - Tomazinho',
+    image: ImageAliancados,
+    fullDescription: 'Junte-se a célula de casais, fortelaça sua aliança conjugal em Cristo Jesus',
   },
   {
-    name: 'Esperança',
-    leader: 'Pedro Santos',
-    location: 'Zona Sul',
-    time: 'Quartas, 19h30',
-    description: 'Célula para jovens universitários e profissionais.',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    id: 2,
+    leader: ' Pra Ana Lúcia',
+    title: 'Filhas do Rei',
+    date: 'Terça',
+    time: '19:30',
+    location: 'Rua Manoel Gama,458 - Gato Preto',
+    image: ImageFilhasdoRei,
+    fullDescription: 'Junte-se a célula de mulheres, fortaleça em conhecimento feminino segundo A palavra de Deus.',
   },
   {
-    name: 'Família em Cristo',
-    leader: 'Ana e Carlos Oliveira',
-    location: 'Zona Norte',
-    time: 'Quintas, 20h',
-    description: 'Grupo para famílias com crianças.',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    id: 3,
+    leader: 'Anderson',
+    title: '300 de Gideão',
+    date: 'Terça',
+    time: '20:00',
+    location: 'Dona Jove, 340 - Tomazinho',
+    image: Image300deGideao,
+    fullDescription: 'Junte-se a célula de Homem valorozos que aprendem todos os dias como Servir e Proteger Suas Famílias segundo a chamada de Deus.',
   },
   {
-    name: 'Luz do Mundo',
-    leader: 'Roberto Pereira',
-    location: 'Zona Leste',
-    time: 'Sextas, 19h',
-    description: 'Célula voltada para novos convertidos.',
-    image: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-  }
+    id: 4,
+    leader: 'Sílvia',
+    title: 'Cristo Rocha Eterna',
+    date: 'Quinta-Feira',
+    time: '19:30',
+    location: 'Antônio Martins de Oliveira, 783 - Tomazinho',
+    image: ImageCristoRocha,
+    fullDescription: 'Junte-se a célula de Homem valorozos que aprendem todos os dias como Servir e Proteger Suas Famílias segundo a chamada de Deus.',
+  },
+  {
+    id: 5,
+    leader: 'Jaime e Adriana',
+    title: 'Tirosh',
+    date: 'Terça-Feira',
+    time: '19:30',
+    location: 'Manoel Gama, 446 - Tomazinho',
+    image: ImageTirosh,
+    fullDescription: 'Junte-se a célula de Família aprenda e entenda o conceito desse projeto segundo o coração de Deus ',
+  },
+  {
+    id: 6,
+    leader: 'Pr Igor Magalhães e Pra Bia Magalhães',
+    title: 'VIVUS',
+    date: 'Terça-Feira',
+    time: '19:30',
+    location: 'Dona Jove, 53 - Tomazinho',
+    image: ImageVivus,
+    fullDescription: 'Junte-se a célula de Jovens torne-se mais um jovem descrito em Joel e entenda a profundidade de um ambiente profético.',
+  },
+  {
+    id: 7,
+    leader: 'Pra Simone de Souza',
+    title: 'Herdeiras',
+    date: 'Quinta-Feira',
+    time: '19:30',
+    location: 'Dona Jove, 340 - Tomazinho',
+    image: ImageHerdeiras,
+    fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
+  },
 ];
 
-const CellGroupsPage = () => {
+const EventsPage = () => {
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Nossas Células</h1>
-          <p className="text-lg text-gray-600">
-            Encontre uma célula próxima a você e faça parte de uma comunidade acolhedora
-          </p>
+          <p className="text-lg text-gray-600">Encontre uma célula próxima a você e faça parte de uma comunidade acolhedora</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {cellGroups.map((cell, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <img src={cell.image} alt={cell.name} className="w-full h-48 object-cover" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cellgroups.map((event) => (
+            <div key={event.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src={event.image}
+                alt={event.title}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{cell.name}</h3>
-                <div className="space-y-3 mb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{event.title}</h3>
+                
+                <div className="space-y-2 mb-4">
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Users className="h-5 w-5" />
-                    <span>Líderes: {cell.leader}</span>
+                    <span>{event.leader}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-gray-600">
-                    <MapPin className="h-5 w-5" />
-                    <span>{cell.location}</span>
+                    <Calendar className="h-5 w-5" />
+                    <span>{event.date}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-gray-600">
                     <Clock className="h-5 w-5" />
-                    <span>{cell.time}</span>
+                    <span>{event.time}</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-gray-600">
+                    <MapPin className="h-5 w-5" />
+                    <span>{event.location}</span>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">{cell.description}</p>
-               {/* <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                  Participar desta Célula
-                </button> */}
+
+                <p className="text-gray-600 mb-4">{event.fullDescription}</p>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Quer ser um líder de célula?</h3>
-          <p className="text-gray-600 mb-6">
-            Se você tem interesse em liderar uma célula, entre em contato conosco para saber mais sobre o processo de formação de líderes.
-          </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-            Quero ser líder
-          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default CellGroupsPage;
+export default EventsPage;
