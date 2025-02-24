@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import { Calendar, Clock, MapPin, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Calendar, Clock, MapPin, ChevronRight, X } from 'lucide-react';
 import ImageRetiroCasais from '../image/retiro-casais.png'
+import VideoEventsMarco from '../videos/icert_news_marco_final.mp4'
 
 const events = [
   {
@@ -78,6 +79,11 @@ const events = [
 
 const EventsPage = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [showWelcomeVideo, setShowWelcomeVideo] = useState(false);
+
+  useEffect(() => {
+    setShowWelcomeVideo(true);
+  }, []);
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
@@ -141,6 +147,29 @@ const EventsPage = () => {
             </div>
           ))}
         </div>
+
+          {/* Welcome Video Modal */}
+          {showWelcomeVideo && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
+            <div className="bg-white rounded-lg max-w-4xl w-full relative">
+              <button
+                onClick={() => setShowWelcomeVideo(false)}
+                className="absolute -top-4 -right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition"
+              >
+                <X className="h-6 w-6 text-gray-600" />
+              </button>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  className="w-full h-[600px] rounded-t-lg"
+                  src= "https://drive.google.com/file/d/15l3Dg8GHXaWiRMN5V-Xupn-LjXuFikaW/preview"
+                  title="Welcome Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        )}
 
         {selectedEvent && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">

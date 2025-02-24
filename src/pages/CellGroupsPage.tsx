@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, ChevronRight,Users } from 'lucide-react';
+import { Calendar, Clock, MapPin, ChevronRight, Users } from 'lucide-react';
 import ImageAliancados from '../image/celulas/AliancadosEmCristo.png'
 import ImageFilhasdoRei from '../image/celulas/FilhasdoRei.png'
 import Image300deGideao from '../image/celulas/300deGideao.png'
