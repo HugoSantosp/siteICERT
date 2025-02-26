@@ -1,9 +1,11 @@
-import { Music, Book, Users, Shield as Child, Cpu, Star } from 'lucide-react';
+import { Music, Book, Users, Shield as Child, Cpu, Star, Flower2, Sun } from 'lucide-react';
 import ImageAdoracao from '../image/Adoracao.jpg'
 import ImageDanca from '../image/danca.jpeg'
 import ImageIntercessao from '../image/intercessao.jpeg'
 import ImageFamilia from '../image/Familia.png'
 import ImageInfantil from '../image/Infantil.jpg'
+import ImageRedeMelhorIdade from '../image/Rede-Melhor-Idade.png'
+import ImageRedeMulheres from '../image/RedeMulheres.png'
 
 const ministries = [
   {
@@ -41,6 +43,18 @@ const ministries = [
     name: 'Ministério Infantil',
     description: 'Cuidando e ensinando as crianças sobre o amor de Deus.',
     image: ImageInfantil
+  },
+  {
+    icon: <Flower2 className="h-8 w-8" />,
+    name: 'Rede de Mulheres',
+    description: 'Cuidando e ensinando as crianças sobre o amor de Deus.',
+    image: ImageRedeMulheres
+  },
+  {
+    icon: <Sun className="h-8 w-8" />,
+    name: 'Rede da Melhor Idade',
+    description: 'Cuidando e ensinando as crianças sobre o amor de Deus.',
+    image: ImageRedeMelhorIdade 
   }
 ];
 

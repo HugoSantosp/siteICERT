@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, MapPin, ChevronRight, X } from 'lucide-react';
 import ImageRetiroCasais from '../image/retiro-casais.png'
+import ImageCongressoMulheres from '../image/congresso-de-mulheres2.png'
 import VideoEventsMarco from '../videos/icert_news_marco_final.mp4'
 
 const events = [
@@ -50,7 +51,7 @@ const events = [
     date: '29/03/2025',
     time: '--',
     location: '--',
-    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: ImageCongressoMulheres,
     shortDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
     fullDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
   },

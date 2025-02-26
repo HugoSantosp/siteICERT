@@ -8,6 +8,11 @@ import ImageVivus from '../image/celulas/vivus2.jpg'
 import ImageHerdeiras from '../image/celulas/Herdeiras.png'
 import ImageAliancadas from '../image/celulas/MulheresAliancadas.png'
 import ImageAmordeDeus from '../image/celulas/AmordeDeus.png'
+import ImageCelulaOnline from '../image/celulas/celula-online.png'
+import ImageVencendoComCristo from '../image/celulas/VencendoComCristo.png'
+import ImageTransformandoVidas from '../image/celulas/TransformandoVidas.png'
+import ImageSozo from '../image/celulas/Sozo.png'
+import ImageChamadasParaCristo from '../image/celulas/ChamadaParaCristo.png'
 
 const cellgroups = [
   {
@@ -99,6 +104,56 @@ const cellgroups = [
     location: 'Peri 138 casa 9 - Tomazinho',
     image: ImageAmordeDeus,
     fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
+  },
+  {
+    id: 10,
+    leader: 'Célia e Roberto ',
+    title: 'Conectados com Deus',
+    date: 'Quinta-Feira',
+    time: '20:0',
+    location: 'Seu Dispositivo disponível.',
+    image: ImageCelulaOnline,
+    fullDescription: 'Junte-se a célula online, para você que que nao encontrou uma célula perto da sua casa.',
+  },
+  {
+    id: 11,
+    leader: 'Vanete',
+    title: 'Chamadas Para Cristo',
+    date: 'Quinta-Feira',
+    time: '20:0',
+    location: 'Travessa Augusta 122 A - Tomazinho',
+    image: ImageChamadasParaCristo,
+    fullDescription: 'Junte-se a célula online, para você que que nao encontrou uma célula perto da sua casa.',
+  },
+  {
+    id: 12,
+    leader: 'Monique Lopes',
+    title: 'Vencendo Com Cristo',
+    date: 'Terça-Feira',
+    time: '20:0',
+    location: 'Rua Dona Maria do Carmo 223 - Tomazinho',
+    image: ImageVencendoComCristo,
+    fullDescription: 'Junte-se a célula de mulheres e aprenda a viver uma vida com Deus.',
+  },
+  {
+    id: 13,
+    leader: 'Edilma',
+    title: 'Transformando Vidas',
+    date: 'Terça-Feira',
+    time: '19:30',
+    location: 'Rua Dona Jove 108 - Tomazinho',
+    image: ImageTransformandoVidas,
+    fullDescription: 'Junte-se a célula de mulheres e aprenda a viver uma vida com Deus.',
+  },
+  {
+    id: 14,
+    leader: 'Guto e Suelen',
+    title: 'Sozo',
+    date: 'Terça-Feira',
+    time: '19:00',
+    location: 'Rua Manoel Gama 287 - Tomazinho',
+    image: ImageSozo,
+    fullDescription: 'Junte-se a célula de mulheres e aprenda a viver uma vida com Deus.',
   },
 ];
 

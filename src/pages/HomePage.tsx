@@ -17,6 +17,10 @@ import ImageKatia from '../image/pastores/Katia.png';
 import ImageSimone from '../image/pastores/Simone.png';
 import ImageCarol from '../image/pastores/Carol.png';
 
+import ImageProjetoDançaMinisterial from '../image/DancaMinisterial.png';
+
+
+
 const pastores =[
   {
     image: ImageJorge,
@@ -239,12 +243,24 @@ const HomePage = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
                 src= {ImageJantaAmiga}
-                alt="Escola Bíblica"
+                alt="Janta Amiga"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Janta Amiga</h3>
-                <p className="text-gray-600">Formação bíblica e discipulado para todas as idades.</p>
+                <p className="text-gray-600">Respondeu Jesus: " 'Ame o Senhor, o seu Deus de todo o seu coração, de toda a sua alma e de todo o seu entendimento'. Este é o primeiro e maior mandamento. E o segundo é semelhante a ele: 'Ame o seu próximo como a si mesmo'".</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img 
+                src= {ImageProjetoDançaMinisterial}
+                alt="PRojeto Danaça Ministerial"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Projeto Dança Ministerial</h3>
+                <p className="text-gray-600">Aprenda a elevar sua adoração atravez da dança para todas as idades.</p>
               </div>
             </div>
           </div>
