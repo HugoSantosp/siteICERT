@@ -1,46 +1,49 @@
 import React from 'react';
-import { Briefcase, Phone, Mail, MapPin, Star } from 'lucide-react';
+import { Briefcase, Phone, Mail, MapPin, Star, MessageCircle, Instagram, PanelsTopLeft } from 'lucide-react';
+import ImageAnchorLogo from '../image/mural/Anchor.jpg'
+import ImageReinoBuffet from '../image/mural/OreinoBuffet.png'
 
 const professionals = [
   {
-    name: 'Ana Silva',
-    profession: 'Dentista',
-    description: 'Especialista em Ortodontia com mais de 10 anos de experiência.',
+    name: 'Hugo Santos',
+    profession: 'Programador',
+    description: 'Profissional especializado em criar, desenvolver e manter softwares, sites, aplicativos e sistemas computacionais',
     contact: {
-      phone: '(11) 99999-9999',
-      email: 'ana.silva@email.com',
-      address: 'Rua das Flores, 123 - Centro'
+      phone: '(21) 99492-7680',
+      email: 'hugosantospereira11@gmail.com',
+      address: 'NOVA IGUAÇU - RJ',
+      instagram: 'santos_hugo_pereira'
     },
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageAnchorLogo,
+    site: 'https://devservice.onrender.com/'
   },
   {
-    name: 'Carlos Santos',
-    profession: 'Eletricista',
-    description: 'Serviços residenciais e comerciais, instalações e manutenção.',
+    name: 'O Reino Buffet',
+    profession: 'Organizador de Eventos Gastronômicos',
+    description: 'Profissional especializado em planejar, preparar e organizar refeições para eventos como casamentos, aniversários, confraternizações e encontros corporativos.',
     contact: {
-      phone: '(11) 98888-8888',
-      email: 'carlos.santos@email.com',
-      address: 'Av. Principal, 456 - Vila Nova'
+      phone: '(21) 96620-5900',
+      email: 'hugosantospereira11@gmail.com',
+      address: 'SÃO JOÃO DE MERITI - RJ',
+      instagram: 'o.reinobuffet'
     },
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageReinoBuffet,
+    site: ''
   },
-  {
-    name: 'Mariana Oliveira',
-    profession: 'Advogada',
-    description: 'Especializada em Direito Civil e Trabalhista.',
-    contact: {
-      phone: '(11) 97777-7777',
-      email: 'mariana.oliveira@email.com',
-      address: 'Rua do Comércio, 789 - Jardim Europa'
-    },
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-  }
+ 
 ];
 
 const MuralPage = () => {
+  // Function to format phone number for WhatsApp link
+  const formatWhatsAppNumber = (phone: string) => {
+    // Remove non-numeric characters
+    const numericOnly = phone.replace(/\D/g, '');
+    // Add country code if not present (assuming Brazil)
+    return numericOnly.startsWith('55') ? numericOnly : `55${numericOnly}`;
+  };
+
   return (
     <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
@@ -53,7 +56,7 @@ const MuralPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {professionals.map((professional, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow relative">
               <img
                 src={professional.image}
                 alt={professional.name}
@@ -76,7 +79,7 @@ const MuralPage = () => {
 
                 <p className="text-gray-600 mb-4">{professional.description}</p>
 
-                <div className="space-y-2 text-gray-600">
+                <div className="space-y-2 text-gray-600 mb-4">
                   <div className="flex items-center space-x-2">
                     <Phone className="h-5 w-5" />
                     <span>{professional.contact.phone}</span>
@@ -90,11 +93,54 @@ const MuralPage = () => {
                     <span>{professional.contact.address}</span>
                   </div>
                 </div>
+                
+                {/* Social Media Buttons */}
+                <div className="absolute bottom-1 right-4 flex space-x-2">
+
+                  {/* Site Button */}
+                  <a 
+                    href={`${professional.site}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-blue-500 via-blue-lith-500 to-blue-500 text-white p-3 rounded-full shadow-lg hover:opacity-90 transition-all hover:scale-110"
+                    aria-label={`Perfil do Instagram de ${professional.name}`}
+                    title={`Perfil do Instagram de ${professional.name}`}
+                  >
+                    <PanelsTopLeft className="h-5 w-5" />
+                  </a>
+
+                  {/* Instagram Button */}
+                  <a 
+                    href={`https://instagram.com/${professional.contact.instagram}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white p-3 rounded-full shadow-lg hover:opacity-90 transition-all hover:scale-110"
+                    aria-label={`Perfil do Instagram de ${professional.name}`}
+                    title={`Perfil do Instagram de ${professional.name}`}
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+
+                  
+                  
+                  {/* WhatsApp Button */}
+                  <a 
+                    href={`https://wa.me/${formatWhatsAppNumber(professional.contact.phone)}?text=Olá ${professional.name}, vi seu contato no mural da Igreja Viva e gostaria de saber mais sobre seus serviços.`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110"
+                    aria-label={`Conversar com ${professional.name} pelo WhatsApp`}
+                    title={`Conversar com ${professional.name} pelo WhatsApp`}
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
         </div>
-
+        
+        {/*
         <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">É um profissional da nossa igreja?</h3>
           <p className="text-gray-600 mb-6">
@@ -104,6 +150,7 @@ const MuralPage = () => {
             Cadastrar Serviço
           </button>
         </div>
+        */}
       </div>
     </div>
   );

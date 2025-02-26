@@ -73,7 +73,7 @@ const MinistriesPage = () => {
               <img
                 src={ministry.image}
                 alt={ministry.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-60 object-cover"
               />
               <div className="p-6">
                 <div className="flex items-center space-x-3 mb-4">

@@ -49,33 +49,29 @@ const Navbar = () => {
      {isMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <Link 
-                  to="/" 
-                  className="block px-3 py-2 hover:bg-blue-700 rounded"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Início
+                <Link to="/" className="flex items-center space-x-1 text-gray-700 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
+                  <Home className="h-5 w-5" />
+                  <span>Home</span>
                 </Link>
-                <Link 
-                  to="/eventos" 
-                  className="block px-3 py-2 hover:bg-blue-700 rounded"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Eventos
+                <Link to="/ministerios" className="flex items-center space-x-1 text-gray-700 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
+                  <Users className="h-5 w-5" />
+                  <span>Ministérios</span>
                 </Link>
-                <Link 
-                  to="/celulas" 
-                  className="block px-3 py-2 hover:bg-blue-700 rounded"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Células
+                <Link to="/celulas" className="flex items-center space-x-1 text-gray-700 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
+                  <Users className="h-5 w-5" />
+                  <span>Células</span>
                 </Link>
-                <Link 
-                  to="/ministerios" 
-                  className="block px-3 py-2 hover:bg-blue-700 rounded"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Ministérios
+                <Link to="/eventos" className="flex items-center space-x-1 text-gray-700 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
+                  <Calendar className="h-5 w-5" />
+                  <span>Eventos</span>
+                </Link>
+                <Link to="/mural" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
+                  <Briefcase className="h-5 w-5" />
+                  <span>Mural</span>
+                </Link>
+                <Link to="/mural" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
+                  <Briefcase className="h-5 w-5" />
+                  <span>Mural</span>
                 </Link>
               </div>
             </div>

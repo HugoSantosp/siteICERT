@@ -5,7 +5,7 @@ import CellGroupsPage from './pages/CellGroupsPage';
 import EventsPage from './pages/EventsPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-//import MuralPage from './pages/MuralPage';
+import MuralPage from './pages/MuralPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             <Route path="/ministerios" element={<MinistriesPage />} />
             <Route path="/celulas" element={<CellGroupsPage />} />
             <Route path="/eventos" element={<EventsPage />} />
-            {/*<Route path="/mural" element={<MuralPage />} />*/}
+            <Route path="/mural" element={<MuralPage />} />
           </Routes>
         </main>
         <Footer />

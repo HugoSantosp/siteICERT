@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Heart, Target, Users } from 'lucide-react';
 import LocalImage from '../image/Logo.png';
 import ImageIgreja2  from '../image/349341568_250120797622621_6122126321454702848_n.jpg';
@@ -116,6 +117,7 @@ const events = [
 const HomePage = () => {
   return (
     <div className="flex flex-col">
+
       {/* Hero Section */}
       <div 
         className="h-[600px] bg-cover bg-center relative"
@@ -123,8 +125,8 @@ const HomePage = () => {
           backgroundImage:  `url(${LocalImage})`,
         }}
       >
-
       </div>
+  
 
       {/* Propósitos Section */}
       <section className="py-16 bg-white">
