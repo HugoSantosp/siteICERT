@@ -19,6 +19,7 @@ import ImageSimone from '../image/pastores/Simone.png';
 import ImageCarol from '../image/pastores/Carol.png';
 
 import ImageProjetoDançaMinisterial from '../image/DancaMinisterial.png';
+import ImageProjetoHOPE from '../image/projetohope.png'
 
 
 
@@ -263,6 +264,18 @@ const HomePage = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Projeto Dança Ministerial</h3>
                 <p className="text-gray-600">Aprenda a elevar sua adoração atravez da dança para todas as idades.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img 
+                src= {ImageProjetoHOPE}
+                alt="PRojeto Danaça Ministerial"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Projeto HOPE</h3>
+                <p className="text-gray-600">Então Jesus disse: “Não proíbam que as crianças venham a mim, porque o Reino dos céus pertence àqueles que são como estas crianças”.</p>
               </div>
             </div>
           </div>

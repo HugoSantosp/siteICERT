@@ -153,7 +153,7 @@ const cellgroups = [
     time: '19:00',
     location: 'Rua Manoel Gama 287 - Tomazinho',
     image: ImageSozo,
-    fullDescription: 'Junte-se a célula de mulheres e aprenda a viver uma vida com Deus.',
+    fullDescription: 'Junte-se a célula de Crianças leve seu filho para obter um aprender divertido sobre o reino de Deus.',
   },
 ];
 
