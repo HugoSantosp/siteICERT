@@ -52,8 +52,8 @@ const events = [
     time: '--',
     location: '--',
     image: ImageCongressoMulheres,
-    shortDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
-    fullDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
+    shortDescription: 'Faça Sua incrição para aprender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
+    fullDescription: 'Faça Sua incrição para aprender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
   },
   {
     id: 6,
