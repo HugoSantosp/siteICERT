@@ -24,7 +24,7 @@ const professionals = [
     description: 'Profissional especializado em planejar, preparar e organizar refeições para eventos como casamentos, aniversários, confraternizações e encontros corporativos.',
     contact: {
       phone: '(21) 96620-5900',
-      email: 'hugosantospereira11@gmail.com',
+      email: 'Reizinho435@gmail.com',
       address: 'SÃO JOÃO DE MERITI - RJ',
       instagram: 'o.reinobuffet'
     },
@@ -103,8 +103,8 @@ const MuralPage = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-blue-500 via-blue-lith-500 to-blue-500 text-white p-3 rounded-full shadow-lg hover:opacity-90 transition-all hover:scale-110"
-                    aria-label={`Perfil do Instagram de ${professional.name}`}
-                    title={`Perfil do Instagram de ${professional.name}`}
+                    aria-label={`Página de ${professional.name}`}
+                    title={`Página de ${professional.name}`}
                   >
                     <PanelsTopLeft className="h-5 w-5" />
                   </a>
@@ -125,7 +125,7 @@ const MuralPage = () => {
                   
                   {/* WhatsApp Button */}
                   <a 
-                    href={`https://wa.me/${formatWhatsAppNumber(professional.contact.phone)}?text=Olá ${professional.name}, vi seu contato no mural da Igreja Viva e gostaria de saber mais sobre seus serviços.`} 
+                    href={`https://wa.me/${formatWhatsAppNumber(professional.contact.phone)}?text=Olá ${professional.name}, vi seu contato no mural da Igreja Icert e gostaria de saber mais sobre seus serviços.`} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110"

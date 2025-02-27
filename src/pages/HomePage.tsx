@@ -8,7 +8,7 @@ import ImageCrianca from '../image/crianca.png';
 import ImageSantaCeia from '../image/santaceia.png';
 import { Calendar, Clock, MapPin, } from 'lucide-react';
 
-import ImageAnaLucia from '../image/pastores/Analucia.png';
+import ImageAnaLucia from '../image/pastores/AnaLucia2.png';
 import ImageJorge from '../image/pastores/Jorge.png';
 import ImageBia from '../image/pastores/Bia.jpg';
 import ImageIgor from '../image/pastores/Igor.jpg';
@@ -16,7 +16,7 @@ import ImageDaniel from '../image/pastores/Daniel.jpg';
 import ImageIris from '../image/pastores/Iris.jpg';
 import ImageKatia from '../image/pastores/Katia.png';
 import ImageSimone from '../image/pastores/Simone.png';
-import ImageCarol from '../image/pastores/Carol.png';
+import ImageCarol from '../image/pastores/pastoraCarol.png';
 
 import ImageProjetoDançaMinisterial from '../image/DancaMinisterial.png';
 import ImageProjetoHOPE from '../image/projetohope.png'
