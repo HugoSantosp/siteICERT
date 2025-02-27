@@ -2,6 +2,7 @@ import React from 'react';
 import { Briefcase, Phone, Mail, MapPin, Star, MessageCircle, Instagram, PanelsTopLeft } from 'lucide-react';
 import ImageAnchorLogo from '../image/mural/Anchor.jpg'
 import ImageReinoBuffet from '../image/mural/OreinoBuffet.png'
+import ImageAnaLucia from '../image/mural/AnaLucia.png'
 
 const professionals = [
   {
@@ -32,7 +33,20 @@ const professionals = [
     image: ImageReinoBuffet,
     site: ''
   },
- 
+  {
+    name: 'Ana Lucia',
+    profession: 'Psicanalista, Terapeuta Floral, Auriculoterapeuta',
+    description: 'Profissional especializado  em terapias diversas',
+    contact: {
+      phone: '(21) 99849-3687',
+      email: 'dasilvaanalucia72@gmail.com',
+      address: 'SÃO JOÃO DE MERITI - RJ',
+      instagram: 'silva_analucia68'
+    },
+    rating: 5,
+    image: ImageAnaLucia,
+    site: 'https://www.facebook.com/Conquistadoredoreino'
+  },
 ];
 
 const MuralPage = () => {
