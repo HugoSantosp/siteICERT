@@ -6,6 +6,7 @@ import ImageFamilia from '../image/Familia.png'
 import ImageInfantil from '../image/Infantil.jpg'
 import ImageRedeMelhorIdade from '../image/Rede-Melhor-Idade.png'
 import ImageRedeMulheres from '../image/RedeMulheres.png'
+import ImageMidia from '../image/MidiaImage.png'
 
 const ministries = [
   {
@@ -24,7 +25,7 @@ const ministries = [
     icon: <Cpu className="h-8 w-8" />,
     name: 'Ministério de Mídia e Tecnologia',
     description: 'Produção audiovisual e presença digital da igreja.',
-    image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: ImageMidia
   },
   {
     icon: <Users className="h-8 w-8" />,

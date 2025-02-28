@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, MapPin, ChevronRight, X } from 'lucide-react';
-import ImageRetiroCasais from '../image/retiro-casais.png'
+import ImageRetiroCasais from '../image/events/RetiroCasais.png'
 import ImageCongressoMulheres from '../image/congresso-de-mulheres2.png'
 import VideoEventsMarco from '../videos/icert_news_marco_final.mp4'
+
+
+import ImageDiscipulado from '../image/events/Discipulado.png'
+import ImageBatismo from '../image/events/Batismo.png'
+import ImagePascoa from '../image/events/Pascoa.png'
+import ImageLicoesElas from '../image/events/LicoesComelas.png'
+import ImageColunaOracao from '../image/events/ColunaDeOracao.png'
+import ImageEscolaApostolica from '../image/events/EscolaApostolica.png'
+import ImageCongressoAnual from '../image/events/CongressoAnual.png'
+
 
 const events = [
   {
@@ -11,37 +21,57 @@ const events = [
     date: '19/04/2025 e 20/04/2025',
     time: '--',
     location: 'Agência',
-    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
-    fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
+    image: ImagePascoa,
+    shortDescription: 'Disse-lhe Jesus: "Eu sou a ressurreição e a vida. Aquele que crê em mim, ainda que morra, viverá; e quem vive e crê em mim, não morrerá eternamente. Você crê nisso?"',
+    fullDescription: 'Disse-lhe Jesus: "Eu sou a ressurreição e a vida. Aquele que crê em mim, ainda que morra, viverá; e quem vive e crê em mim, não morrerá eternamente. Você crê nisso?"',
   },
   {
     id: 2,
     title: 'Série de conferências: Lições com Elas.',
     date: 'Todas as quartas',
     time: '19:30',
-    location: 'Auditório Principal',
-    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
-    fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
+    location: 'Agência',
+    image: ImageLicoesElas,
+    shortDescription: 'Uma Conferenca que acontece toda quartada feira com nova lições, desta vez com as mulheres valorozas.',
+    fullDescription: 'Uma Conferenca que acontece toda quartada feira com nova lições, desta vez com as mulheres valorozas.',
+  },
+  {
+    id: 2,
+    title: 'Coluna de Oração.',
+    date: 'Toda Sexta-Feira',
+    time: '17:30',
+    location: 'Agência',
+    image: ImageColunaOracao,
+    shortDescription: 'Venha Participar, Ore por aqueles que você ama.',
+    fullDescription: 'Venha Participar, Ore por aqueles que você ama.',
   },
   {
     id: 3,
-    title: 'Discipulado Plantados, Ceia do Senhor e Batismo nas águas',
+    title: 'Discipulado Plantados, Ceia do Senhor',
     date: ' 02/03/2025 (Domingo)',
     time: '09:00',
-    location: 'Auditório Principal',
-    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Um fim de semana especial para jovens com louvor, palavra e comunhão.',
-    fullDescription: 'Junte-se a nós para um fim de semana transformador com pregadores convidados, momentos de louvor e adoração, workshops e muito mais. Uma oportunidade única para crescer espiritualmente e fazer novas amizades.',
+    location: 'Agência',
+    image: ImageDiscipulado,
+    shortDescription: 'Uma manhã memorável de Renovo Espiritual e Conhecimentos em Deus',
+    fullDescription: 'Uma manhã memorável de Renovo Espiritual e Conhecimentos em Deus',
+  },
+  {
+    id: 3,
+    title: 'Batismo nas águas',
+    date: ' 02/03/2025 (Domingo)',
+    time: '09:00',
+    location: 'Agência',
+    image: ImageBatismo,
+    shortDescription: 'Uma Manhã de Renascimento Espiritual.',
+    fullDescription: 'Uma mnhã memoravel de renascimento espiritual, presenciamos e testemunhamos o poder de Deus sobre as vida de nossos irmãos.',
   },
   {
     id: 4,
     title: 'Matrículas abertas Escola Apostólica 2025',
     date: ' Início das aulas em março.',
     time: '--',
-    location: '--',
-    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    location: 'Agência',
+    image: ImageEscolaApostolica,
     shortDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
     fullDescription: 'Faça Sua incrição para aparender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
   },
@@ -49,8 +79,8 @@ const events = [
     id: 5,
     title: 'Congresso de Mulheres',
     date: '29/03/2025',
-    time: '--',
-    location: '--',
+    time: '16:00',
+    location: 'Agência',
     image: ImageCongressoMulheres,
     shortDescription: 'Faça Sua incrição para aprender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT',
     fullDescription: 'Faça Sua incrição para aprender mais de Deus. No estade da Palavra Revelada ou na secretária da ICERT'
@@ -69,9 +99,9 @@ const events = [
     id: 7,
     title: 'Congresso anual ICERT',
     date: '21/04/2025',
-    time: '--',
+    time: '10:00',
     location: 'Agência',
-    image: ImageRetiroCasais,
+    image: ImageCongressoAnual,
     shortDescription: 'Participe conosco e haverá uma Marcha pela manhã denominada "Meriti haja paz em ti." ',
     fullDescription: 'Participe conosco e haverá uma Marcha pela manhã denominada "Meriti haja paz em ti."'
   },
@@ -123,18 +153,6 @@ const EventsPage = () => {
                 
 
                 <div className="flex items-center gap-4 mt-4">
-                    {/* Botão de inscrição (exibido apenas para um evento específico) */}
-                    {event.title === "Congresso de Mulheres" && (
-                      <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfJc7syy8M4uM7msWeiIIY0bNIoZhjp4Wrz5EH3UqnmEm9SqA/viewform?usp=header"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-                      >
-                        Inscreva-se
-                      </a>
-                    )}
-
                     {/* Botão de Saiba Mais */}
                     <button
                       onClick={() => setSelectedEvent(event)}
@@ -198,9 +216,20 @@ const EventsPage = () => {
                 </div>
                 <p className="text-gray-600 mb-6">{selectedEvent.fullDescription}</p>
                 <div className="flex justify-end">
+                    {/* Botão de inscrição (exibido apenas para um evento específico) */}
+                    {selectedEvent.title === "Congresso de Mulheres" && (
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfJc7syy8M4uM7msWeiIIY0bNIoZhjp4Wrz5EH3UqnmEm9SqA/viewform?usp=header"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                      >
+                        Inscreva-se
+                      </a>
+                    )}
                   <button
                     onClick={() => setSelectedEvent(null)}
-                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                    className="bg-blue-600 text-white px-4 py-2  ml-2 rounded-lg hover:bg-blue-700 transition"
                   >
                     Fechar
                   </button>
