@@ -38,7 +38,7 @@ const pastores =[
   },
   {
     image: ImageIgor,
-    nome: 'Pra Igor Magalhães',
+    nome: 'Pr Igor Magalhães',
     posicao: 'Pastor Auxiliar',
     timeservice: 'Servindo há 15 anos'
   },
