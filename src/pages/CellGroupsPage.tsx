@@ -103,7 +103,7 @@ const cellgroups = [
     time: '19:30',
     location: 'Peri 138 casa 9 - Tomazinho',
     image: ImageAmordeDeus,
-    fullDescription: 'Junte-se a célula de Mulheres um entendimento sobre caminha sobre a mesma missão que sua familia.',
+    fullDescription: 'Junte-se a célula de Homens para um entendimento sobre caminhada liderando sua familia.',
   },
   {
     id: 10,
