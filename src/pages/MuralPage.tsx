@@ -199,17 +199,17 @@ const MuralPage = () => {
           ))}
         </div>
         
-        {/*
+        
         <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">É um profissional da nossa igreja?</h3>
           <p className="text-gray-600 mb-6">
             Divulgue seus serviços em nosso mural e conecte-se com a comunidade.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+          <a className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition" target="_blank"  href='https://docs.google.com/forms/d/e/1FAIpQLSfmvZaZy2MkjqZ3bSjygn-YOAXium9-LEEG-xs1TmJpe8B75A/viewform?usp=dialog'>
             Cadastrar Serviço
-          </button>
+          </a>
         </div>
-        */}
+       
       </div>
     </div>
   );
