@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, MapPin, ChevronRight, X } from 'lucide-react';
 import ImageRetiroCasais from '../image/events/RetiroCasais.png'
 import ImageCongressoMulheres from '../image/congresso-de-mulheres2.png'
-import VideoEventsMarco from '../videos/icert_news_marco_final.mp4'
+
 
 
 import ImageDiscipulado from '../image/events/Discipulado.png'
 import ImageBatismo from '../image/events/Batismo.png'
 import ImagePascoa from '../image/events/Pascoa.png'
-import ImageLicoesElas from '../image/events/LicoesComelas.png'
+import ImageLicoesElas from '../image/events/ConferenciaComElas.png'
 import ImageColunaOracao from '../image/events/ColunaDeOracao.png'
 import ImageEscolaApostolica from '../image/events/EscolaApostolica.png'
 import ImageCongressoAnual from '../image/events/CongressoAnual.png'
