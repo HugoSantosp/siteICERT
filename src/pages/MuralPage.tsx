@@ -4,6 +4,7 @@ import ImageAnchorLogo from '../image/mural/Anchor.jpg'
 import ImageReinoBuffet from '../image/mural/OreinoBuffet.png'
 import ImageAnaLucia from '../image/mural/AnaLucia.png'
 import ImageDanySilva from '../image/mural/DanySilvaDisigner.png'
+import ImageLSDesigner from '../image/mural/LSDesigner.png'
 
 const professionals = [
   {
@@ -60,6 +61,20 @@ const professionals = [
     },
     rating: 5,
     image: ImageDanySilva,
+    site: 'https://www.facebook.com/share/1A4mg1KAQe/'
+  },
+  {
+    name: 'Ls Designer & Fotografia ',
+    profession: 'Designer digital',
+    description: 'Profissional especializada em criar soluções visuais únicas e personalizadas, refletindo a identidade e os valores da sua marca, com impacto duradouro no público. ',
+    contact: {
+      phone: '(21) 97447-2889',
+      email: 'laurasilvadesigner0@gmail.com ',
+      address: 'SÃO JOÃO DE MERITI - RJ',
+      instagram: 'lsdesfot'
+    },
+    rating: 5,
+    image: ImageLSDesigner,
     site: ''
   },
 ];
