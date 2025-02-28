@@ -5,6 +5,7 @@ import ImageReinoBuffet from '../image/mural/OreinoBuffet.png'
 import ImageAnaLucia from '../image/mural/AnaLucia.png'
 import ImageDanySilva from '../image/mural/DanySilvaDisigner.png'
 import ImageLSDesigner from '../image/mural/LSDesigner.png'
+import ImageIPGInspecoes from '../image/mural/Ipg.png'
 
 const professionals = [
   {
@@ -64,11 +65,11 @@ const professionals = [
     site: 'https://www.facebook.com/share/1A4mg1KAQe/'
   },
   {
-    name: 'Ls Designer & Fotografia ',
+    name: 'Laura Silva Designer & Fotografia ',
     profession: 'Designer digital',
     description: 'Profissional especializada em criar soluções visuais únicas e personalizadas, refletindo a identidade e os valores da sua marca, com impacto duradouro no público. ',
     contact: {
-      phone: '(21) 97447-2889',
+      phone: '21 96775-1099',
       email: 'laurasilvadesigner0@gmail.com ',
       address: 'SÃO JOÃO DE MERITI - RJ',
       instagram: 'lsdesfot'
@@ -76,6 +77,20 @@ const professionals = [
     rating: 5,
     image: ImageLSDesigner,
     site: ''
+  },
+  {
+    name: 'IPG Inspeções',
+    profession: 'Inspeção Predial de Gás',
+    description: 'Profissional especializado em inspeções periódicas de gás, cumprindo a Lei n° 6890 de 2014, garantindo a segurança do seu lar com qualidade e confiança.',
+    contact: {
+      phone: '(21) 99321-1988',
+      email: 'ipginspecaodegas@gmail.com',
+      address: 'Rio de Janeiro - RJ',
+      instagram: 'ipginspecoes'
+    },
+    rating: 5,
+    image: ImageIPGInspecoes,
+    site: 'https://ipginspecoes.com.br/'
   },
 ];
 
