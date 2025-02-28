@@ -1,4 +1,4 @@
-import { Music, Book, Users, Shield as Child, Cpu, Star, Flower2, Sun } from 'lucide-react';
+import { Music, Book, Users, Baby as Child, Cpu, Star, Flower2, TowerControl, Handshake } from 'lucide-react';
 import ImageAdoracao from '../image/Adoracao.jpg'
 import ImageDanca from '../image/danca.jpeg'
 import ImageIntercessao from '../image/intercessao.jpeg'
@@ -7,6 +7,7 @@ import ImageInfantil from '../image/Infantil.jpg'
 import ImageRedeMelhorIdade from '../image/Rede-Melhor-Idade.png'
 import ImageRedeMulheres from '../image/RedeMulheres.png'
 import ImageMidia from '../image/MidiaImage.png'
+import ImageVoluntarios from '../image/Voluntarios.png'
 
 const ministries = [
   {
@@ -48,14 +49,20 @@ const ministries = [
   {
     icon: <Flower2 className="h-8 w-8" />,
     name: 'Rede de Mulheres',
-    description: 'Cuidando e ensinando as crianças sobre o amor de Deus.',
+    description: 'Discipulando mulheres a desenvolver um caráter de Cristo tratando de temas como Edificação, comunhão e relacionamento entre as mulheres.',
     image: ImageRedeMulheres
   },
   {
-    icon: <Sun className="h-8 w-8" />,
-    name: 'Rede da Melhor Idade',
-    description: 'Cuidando e ensinando as crianças sobre o amor de Deus.',
+    icon: <TowerControl className="h-8 w-8" />,
+    name: 'Ministério Torre forte',
+    description: 'Para Senhoras apartir de 62 anos, onde reunidas elas podem fortalecer o relacionamento umas com as outras e também estar Edificando e vivendo em comunhão.',
     image: ImageRedeMelhorIdade 
+  },
+  {
+    icon: <Handshake className="h-8 w-8" />,
+    name: 'Rede de Voluntários',
+    description: 'Todo aquele que se converte ao Senhor e deseja servi-lo, pode se unir ao ministério para assim prestar seu serviço ao reino',
+    image: ImageVoluntarios
   }
 ];
 
