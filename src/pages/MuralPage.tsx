@@ -69,7 +69,7 @@ const professionals = [
     profession: 'Designer digital',
     description: 'Profissional especializada em criar soluções visuais únicas e personalizadas, refletindo a identidade e os valores da sua marca, com impacto duradouro no público. ',
     contact: {
-      phone: '21 96775-1099',
+      phone: '(21) 99199-5292',
       email: 'laurasilvadesigner0@gmail.com ',
       address: 'SÃO JOÃO DE MERITI - RJ',
       instagram: 'lsdesfot'
