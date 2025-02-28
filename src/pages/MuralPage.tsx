@@ -3,6 +3,7 @@ import { Briefcase, Phone, Mail, MapPin, Star, MessageCircle, Instagram, PanelsT
 import ImageAnchorLogo from '../image/mural/Anchor.jpg'
 import ImageReinoBuffet from '../image/mural/OreinoBuffet.png'
 import ImageAnaLucia from '../image/mural/AnaLucia.png'
+import ImageDanySilva from '../image/mural/DanySilvaDisigner.png'
 
 const professionals = [
   {
@@ -35,7 +36,7 @@ const professionals = [
   },
   {
     name: 'Ana Lucia',
-    profession: 'Psicanalista, Terapeuta Floral, Auriculoterapeuta',
+    profession: 'Em formação em Psicanálise, Terapeuta Floral, Auriculoterapeuta',
     description: 'Profissional especializado  em terapias diversas',
     contact: {
       phone: '(21) 99849-3687',
@@ -46,6 +47,20 @@ const professionals = [
     rating: 5,
     image: ImageAnaLucia,
     site: 'https://www.facebook.com/Conquistadoredoreino'
+  },
+  {
+    name: 'Danny Silva Art',
+    profession: 'Desiner gráfico e Sublimação',
+    description: 'Profissional especializada na criação de canecas, xícaras, azulejos e diversos brindes personalizados. Com amor e excelência, cada peça é produzida para encantar e satisfazer os clientes.',
+    contact: {
+      phone: '(21) 97447-2889',
+      email: 'dannyflor094@gmail.com',
+      address: 'SÃO JOÃO DE MERITI - RJ',
+      instagram: 'dannysilvart'
+    },
+    rating: 5,
+    image: ImageDanySilva,
+    site: ''
   },
 ];
 

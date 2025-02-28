@@ -69,10 +69,6 @@ const Navbar = () => {
                   <Briefcase className="h-5 w-5" />
                   <span>Mural</span>
                 </Link>
-                <Link to="/mural" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
-                  <Briefcase className="h-5 w-5" />
-                  <span>Mural</span>
-                </Link>
               </div>
             </div>
           )}
