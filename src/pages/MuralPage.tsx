@@ -6,6 +6,7 @@ import ImageAnaLucia from '../image/mural/AnaLucia.png'
 import ImageDanySilva from '../image/mural/DanySilvaDisigner.png'
 import ImageLSDesigner from '../image/mural/LSDesigner.png'
 import ImageIPGInspecoes from '../image/mural/Ipg.png'
+import ImageDoceDaChile from '../image/mural/da - Bianca Chile.png'
 
 const professionals = [
   {
@@ -92,6 +93,21 @@ const professionals = [
     image: ImageIPGInspecoes,
     site: 'https://ipginspecoes.com.br/'
   },
+  {
+    name: 'Docinhos da Chile',
+    profession: 'Confeitaria',
+    description: 'Profissional Especializado em Confecção de Doces.',
+    contact: {
+      phone: '(21) 99398-5494',
+      email: 'biancachile1997@gmail.com',
+      address: 'Nilópolis- Rj',
+      instagram: 'docinhosdachile'
+    },
+    rating: 5,
+    image: ImageDoceDaChile,
+    site: ''
+  },
+  
 ];
 
 const MuralPage = () => {
