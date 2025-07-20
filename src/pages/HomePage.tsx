@@ -104,9 +104,9 @@ const events = [
   },
   {
     id: 3,
-    title: 'Dicipulado e Santa Ceia',
+    title: 'Santa Ceia',
     date: 'Primeiro Domingo do Mês',
-    time: '09:00',
+    time: '18:00',
     location: 'Agência',
     image: ImageSantaCeia,
     shortDescription: 'Uma celebração especial com apresentações do coral, dramatização e uma mensagem poderosa sobre o significado da Páscoa.',
