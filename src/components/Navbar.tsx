@@ -27,10 +27,12 @@ const Navbar = () => {
               <Users className="h-5 w-5" />
               <span>Células</span>
             </Link>
+            {/* 
             <Link to="/eventos" className="flex items-center space-x-1 text-gray-700 hover:text-orange-600">
               <Calendar className="h-5 w-5" />
               <span>Eventos</span>
             </Link>
+            */}
             <Link to="/mural" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600">
               <Briefcase className="h-5 w-5" />
               <span>Mural</span>
@@ -61,10 +63,12 @@ const Navbar = () => {
                   <Users className="h-5 w-5" />
                   <span>Células</span>
                 </Link>
+                {/*
                 <Link to="/eventos" className="flex items-center space-x-1 text-gray-700 hover:text-orange-600" onClick={() => setIsMenuOpen(false)}>
                   <Calendar className="h-5 w-5" />
                   <span>Eventos</span>
                 </Link>
+                */}
                 <Link to="/mural" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
                   <Briefcase className="h-5 w-5" />
                   <span>Mural</span>
