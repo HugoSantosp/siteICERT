@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Heart, Target, Users } from 'lucide-react';
+import { Heart, Target, Users, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import LocalImage from '../image/Logo.png';
 import ImageIgreja2  from '../image/349341568_250120797622621_6122126321454702848_n.jpg';
 import  ImageCulto  from '../image/culto.jpg';
@@ -231,16 +232,23 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Nossos Projetos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+           
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
                 src={ImageCrianca}
-                alt="Projeto Social"
+                alt="Projeto Criança NO Altar de Deus"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Criança no Altar de Deus</h3>
                 <p className="text-gray-600">Ajudando famílias em situação de vulnerabilidade com alimentos e suporte.</p>
               </div>
+              <div className="flex items-center gap-4 mt-4 ml-4">
+                <Link to="/"  className="flex items-center text-blue-600 font-semibold hover:text-blue-800">
+                  <span>Saiba Mais</span>
+                  <ChevronRight className="h-5 w-5" />
+                </Link>
+                </div>
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
