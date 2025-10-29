@@ -7,6 +7,8 @@ import ImageDanySilva from '../image/mural/DanySilvaDisigner.png'
 import ImageLSDesigner from '../image/mural/LSDesigner.png'
 import ImageIPGInspecoes from '../image/mural/Ipg.png'
 import ImageDoceDaChile from '../image/mural/da - Bianca Chile.png'
+import ImagePalavraRevelada from '../image/mural/PalavraRevelada.jpg'
+import ImageLeneLemos from '../image/mural/LeneLemos_Terapeuta.png'
 
 const professionals = [
   {
@@ -107,6 +109,50 @@ const professionals = [
     image: ImageDoceDaChile,
     site: ''
   },
+  {
+    name: 'Loja Palavra Revelada',
+    profession: 'Venda de Materiais Cristãos(Livros, Bíblias, Artigos Religiosos)',
+    description: 'Profissional Especializado em Levar a Palavra de Deus Através de Materiais Cristãos.',
+    contact: {
+      phone: '(21) 99295-1158',
+      email: '',
+      address: 'São João de Meriti- Rj',
+      instagram: 'loja.palavrarevelada'
+    },
+    rating: 5,
+    image: ImagePalavraRevelada,
+    site: 'https://linktr.ee/loja.palavrarevelada?fbclid=PAZXh0bgNhZW0CMTEAAae0d-IfGptpUV6DZICCWOtz0mCN0szGzbTP9dqktzocItt_RcFyK7BUueJiQw_aem_u3tFCh_-Jx_yGnKLQ400HQ'
+  },
+   {
+    name: 'Terapeuta Lene Lemos',
+    profession: 'Psicoterapeuta',
+    description: 'Profissional Especializado em Psicoterapia.',
+    contact: {
+      phone: '(21) 98215-3452',
+      email: 'Lemoslene218@gmail.com',
+      address: 'São João de Meriti- Rj',
+      instagram: 'lenelemos2'
+    },
+    rating: 5,
+    image: ImageLeneLemos,
+    site: 'https://www.facebook.com/lene.lemos.79'
+  },
+  /*
+  {
+    name: 'Eduardo Laranja',
+    profession: 'Professor de Japonês, Inglês, Português, Redação e Gramática',
+    description: 'Proficional Especializado em Lecionar no ambito de Idiomas e Gramática.',
+    contact: {
+      phone: '(21) 96652-0198',
+      email: '',
+      address: 'São João de Meriti- Rj',
+      instagram: ''
+    },
+    rating: 5,
+    image: ImagePalavraRevelada,
+    site: ''
+  },
+  */
   
 ];
 

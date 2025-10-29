@@ -6,6 +6,7 @@ import EventsPage from './pages/EventsPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MuralPage from './pages/MuralPage';
+import CriancaNoAltarPage from './pages/CriancaNoAltarPage'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/celulas" element={<CellGroupsPage />} />
             <Route path="/eventos" element={<EventsPage />} />
             <Route path="/mural" element={<MuralPage />} />
+            <Route path="/crianca-no-altar" element={<CriancaNoAltarPage />} />
           </Routes>
         </main>
         <Footer />
