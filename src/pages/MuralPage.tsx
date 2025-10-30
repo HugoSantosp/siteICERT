@@ -9,6 +9,7 @@ import ImageIPGInspecoes from '../image/mural/Ipg.png'
 import ImageDoceDaChile from '../image/mural/da - Bianca Chile.png'
 import ImagePalavraRevelada from '../image/mural/PalavraRevelada.jpg'
 import ImageLeneLemos from '../image/mural/LeneLemos_Terapeuta.png'
+import ImageEduardoLaranja from '../image/mural/EduardoLaranja.jpeg'
 
 const professionals = [
   {
@@ -137,7 +138,7 @@ const professionals = [
     image: ImageLeneLemos,
     site: 'https://www.facebook.com/lene.lemos.79'
   },
-  /*
+  
   {
     name: 'Eduardo Laranja',
     profession: 'Professor de Japonês, Inglês, Português, Redação e Gramática',
@@ -146,13 +147,13 @@ const professionals = [
       phone: '(21) 96652-0198',
       email: '',
       address: 'São João de Meriti- Rj',
-      instagram: ''
+      instagram: 'efmlaranja'
     },
     rating: 5,
-    image: ImagePalavraRevelada,
+    image: ImageEduardoLaranja,
     site: ''
   },
-  */
+  
   
 ];
 
