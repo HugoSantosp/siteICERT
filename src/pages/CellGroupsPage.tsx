@@ -13,6 +13,7 @@ import ImageVencendoComCristo from '../image/celulas/VencendoComCristo.png'
 import ImageTransformandoVidas from '../image/celulas/TransformandoVidas.png'
 import ImageSozo from '../image/celulas/Sozo.png'
 import ImageChamadasParaCristo from '../image/celulas/ChamadaParaCristo.png'
+import ImageMaanahim from '../image/celulas/Maanahim.jpeg'
 
 const cellgroups = [
   {
@@ -154,6 +155,16 @@ const cellgroups = [
     location: 'Rua Manoel Gama 287 - Tomazinho',
     image: ImageSozo,
     fullDescription: 'Junte-se a célula de Crianças leve seu filho para obter um aprender divertido sobre o reino de Deus.',
+  },
+   {
+    id: 14,
+    leader: 'Tereza',
+    title: 'Maanaim',
+    date: 'Quinta-Feira',
+    time: '19:30',
+    location: 'Rua Manoel Gama 287 - Tomazinho, (Ao lado da barbearia  do Bicó)',
+    image: ImageMaanahim,
+    fullDescription: 'Junte-se a uma célula mista na qual os ensinamentos serão direcionados a todos.',
   },
 ];
 
