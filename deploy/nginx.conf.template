@@ -34,6 +34,16 @@ server {
     # URL do backend — definida como env var no painel do Render
     set $backend_url "${BACKEND_URL}";
 
+    # ---- Proxy HTTPS para o backend ----
+    # proxy_ssl_server_name ON: envia o SNI (nome do servidor) no handshake TLS.
+    # Sem isso o Cloudflare/CDN do Render rejeita a conexão (SSL alert 40),
+    # pois o IP atende vários domínios e não sabe qual certificado usar.
+    proxy_ssl_server_name on;
+    # Timeouts um pouco mais folgados (backend Free pode demorar pra acordar)
+    proxy_connect_timeout 30s;
+    proxy_read_timeout 90s;
+    proxy_send_timeout 90s;
+
     # ---- Site público (raiz) ----
     location = / {
         try_files /index.html =404;
