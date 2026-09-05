@@ -1,0 +1,10 @@
+# Deploy Render — arquivos desnecessários no build da imagem
+.git
+.angular
+node_modules
+dist
+cypress
+*.zip
+Dockerfile
+README.md
+CYPRESS.md
