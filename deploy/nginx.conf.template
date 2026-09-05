@@ -18,6 +18,13 @@ server {
     listen ${PORT};
     server_name _;
 
+    # Redirects RELATIVOS (sem host/porta): sem isso, o nginx responde
+    # "Location: https://icertag.com.br:10000/..." usando a porta interna
+    # do Render (PORT=10000), que não é exposta publicamente → timeout.
+    absolute_redirect off;
+    # Mantém o host original do cliente nos redirects (ex.: icertag.com.br)
+    server_name_in_redirect off;
+
     root /usr/share/nginx/html;
     index index.html;
 
